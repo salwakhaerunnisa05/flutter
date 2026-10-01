@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'row_colum/LatihanDua.dart';
-
+import 'package:flutter_salwa_rpl1/sized_expanded_stack/LatihanEmpat.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,12 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Latihan satu"),
-          backgroundColor: const Color.fromRGBO(246, 189, 96, 1.0),
-          centerTitle: true,
-        ), 
-         body: LatihanDua(),
+        // appBar: AppBar(
+        //   title: Text("Flutter App"),
+        //   backgroundColor: const Color.fromRGBO(246, 189, 96, 1.0),
+        //   centerTitle: true,
+        // ), 
+         body: LatihanEmpat(),
       ), //Scaffold
     ); //MaterialApp
   }
