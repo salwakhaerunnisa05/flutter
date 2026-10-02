@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_salwa_rpl1/sized_expanded_stack/LatihanEmpat.dart';
+import 'package:flutter_salwa_rpl1/gridView/GambarDalamGridView.dart';
+import 'package:flutter_salwa_rpl1/list_view/TugasSatuListView.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
         //   backgroundColor: const Color.fromRGBO(246, 189, 96, 1.0),
         //   centerTitle: true,
         // ), 
-         body: LatihanEmpat(),
+         body: TugasSatuListView(),
       ), //Scaffold
     ); //MaterialApp
   }
