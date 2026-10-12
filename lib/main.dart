@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_salwa_rpl1/gridView/GambarDalamGridView.dart';
-import 'package:flutter_salwa_rpl1/list_view/TugasSatuListView.dart';
+// import 'package:flutter_salwa_rpl1/gridView/GambarDalamGridView.dart';  
+import 'package:flutter_salwa_rpl1/latihangridlist/ListScreen.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key});
+   MyApp({Key? key});
   
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         //   backgroundColor: const Color.fromRGBO(246, 189, 96, 1.0),
         //   centerTitle: true,
         // ), 
-         body: TugasSatuListView(),
+         body: ArticleListScreen()
       ), //Scaffold
     ); //MaterialApp
   }
