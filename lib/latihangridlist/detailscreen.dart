@@ -8,12 +8,28 @@ class ArticleDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(data['title']!, style: const TextStyle(fontSize: 16, color: Colors.black)),
+          Text(
+            data['title'] ?? '',
+            style: const TextStyle(fontSize: 16, color: Colors.black),
+          ),
           const SizedBox(height: 20),
-          Image.network(data['image']!, height: 200),
+          Image.network(data['image'] ?? '', height: 200),
           const SizedBox(height: 20),
-          Text(data['description']!, style: const TextStyle(fontSize: 16, color: Colors.black)),
+          Text(
+            data['description'] ?? '',
+            style: const TextStyle(fontSize: 16, color: Colors.black),
+          ),
+          const SizedBox(height: 20),
+          Container(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context); // Menggunakan titik koma (;) bukan koma (,)
+              },
+              child: const Text('kembali'),
+            ),
+          ),
         ],
       ),
     );

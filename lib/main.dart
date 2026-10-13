@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_salwa_rpl1/gridView/GambarDalamGridView.dart';  
-import 'package:flutter_salwa_rpl1/latihangridlist/ListScreen.dart';
+import 'package:flutter_salwa_rpl1/routes/app_routes.dart';
+import 'package:flutter_salwa_rpl1/navigator.dart';
 
 
 void main() {
@@ -14,32 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text("Flutter App"),
-        //   backgroundColor: const Color.fromRGBO(246, 189, 96, 1.0),
-        //   centerTitle: true,
-        // ), 
-         body: ArticleListScreen()
-      ), //Scaffold
+      initialRoute: '/',
+      routes: AppRoutes.routes,
     ); //MaterialApp
-  }
-}
-
-class HelloWidget extends StatelessWidget {
-  const HelloWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-     child: Text("Hello, Flutter!", style: TextStyle(
-       fontSize: 24,
-       fontWeight: FontWeight.bold,
-       color: const Color.fromARGB(255, 2, 244, 196),
-       backgroundColor: Colors.black ,
-     )),
-    );
   }
 }

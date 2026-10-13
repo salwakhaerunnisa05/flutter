@@ -52,7 +52,9 @@ class ArticleListScreen extends StatelessWidget {
               ),
             );
           },
+          
           child: Container(
+  
             margin: const EdgeInsets.all(10),
             height: 120,
             decoration: BoxDecoration(
