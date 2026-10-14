@@ -24,6 +24,10 @@ import 'package:flutter_salwa_rpl1/sized_expanded_stack/LayoutSatu.dart';
 import 'package:flutter_salwa_rpl1/sized_expanded_stack/LayoutTiga.dart';
 import 'package:flutter_salwa_rpl1/sized_expanded_stack/SizedBoxWidget.dart';
 import 'package:flutter_salwa_rpl1/sized_expanded_stack/stackWidget.dart';
+import 'package:flutter_salwa_rpl1/sized_expanded_stack/LatihanLima.dart';
+
+//form
+import 'package:flutter_salwa_rpl1/pages/form_page.dart';
 
 
 
@@ -58,6 +62,9 @@ class AppRoutes {
   static const layoutTiga = '/LayoutTiga';
   static const sizedBoxWidget = '/SizedBoxWidget';
   static const stackWidget = '/StackWidget';
+  static const latihanLima = '/LatihanLima';
+  //form
+  static const formpage = '/form_page';
   
   
   
@@ -87,7 +94,10 @@ class AppRoutes {
     layoutTiga:(context) => LatihanTiga(),
     sizedBoxWidget:(context) => SizedBoxWidget(),
     stackWidget:(context) => StackWidget(),
-    
+    latihanLima:(context) => LatihanLima(),
+
+    //form
+    formpage:(context) => FormPage(),
   };
 
 }

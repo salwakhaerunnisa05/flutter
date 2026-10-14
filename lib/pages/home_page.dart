@@ -101,6 +101,20 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Masuk Expanded Widget'),
             ),
+             const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/form_page');
+              },
+              child: Text('Masuk Form Page'),
+            ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/LatihanLima');
+              },
+              child: Text('Masuk Latihan Lima'),
+            ),
           ],
         ),
       ),
