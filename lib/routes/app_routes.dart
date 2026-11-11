@@ -28,6 +28,12 @@ import 'package:flutter_salwa_rpl1/sized_expanded_stack/LatihanLima.dart';
 
 //form
 import 'package:flutter_salwa_rpl1/pages/form_page.dart';
+import 'package:flutter_salwa_rpl1/pages/input_page.dart';
+import 'package:flutter_salwa_rpl1/latihanFormulir/input_page.dart';
+import 'package:flutter_salwa_rpl1/latihanAI/halaman1.dart';
+
+
+
 
 
 
@@ -65,6 +71,13 @@ class AppRoutes {
   static const latihanLima = '/LatihanLima';
   //form
   static const formpage = '/form_page';
+  static const inputpage = '/forminput';
+  static const latihaninputpage = '/latihanforminput';
+  static const latihanAI = '/latihanAI';
+
+
+
+
   
   
   
@@ -98,6 +111,10 @@ class AppRoutes {
 
     //form
     formpage:(context) => FormPage(),
+    inputpage:(context) => BelajarForm(),
+    latihaninputpage:(context) => LatihanBelajarForm(),
+    latihanAI:(context) => Halaman1Items(),
+
   };
 
 }
