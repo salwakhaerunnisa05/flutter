@@ -136,6 +136,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Masuk Latihan AI'),
             ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/fetchApiPage');
+              },
+              child: Text('Masuk Fetch API Page'),
+            ),
           ],
         ),
       ),

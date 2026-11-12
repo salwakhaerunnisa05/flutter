@@ -31,15 +31,7 @@ import 'package:flutter_salwa_rpl1/pages/form_page.dart';
 import 'package:flutter_salwa_rpl1/pages/input_page.dart';
 import 'package:flutter_salwa_rpl1/latihanFormulir/input_page.dart';
 import 'package:flutter_salwa_rpl1/latihanAI/halaman1.dart';
-
-
-
-
-
-
-
-
-
+import 'package:flutter_salwa_rpl1/pages/fetch_api_page.dart';
 
 
 class AppRoutes {
@@ -74,6 +66,7 @@ class AppRoutes {
   static const inputpage = '/forminput';
   static const latihaninputpage = '/latihanforminput';
   static const latihanAI = '/latihanAI';
+  static const fetchApiPage = '/fetchApiPage';
 
 
 
@@ -113,8 +106,8 @@ class AppRoutes {
     formpage:(context) => FormPage(),
     inputpage:(context) => BelajarForm(),
     latihaninputpage:(context) => LatihanBelajarForm(),
-    latihanAI:(context) => Halaman1Items(),
-
+    latihanAI:(context) => YaposKasirApp(),
+    fetchApiPage:(context) => AlbumPage(),
   };
 
 }
