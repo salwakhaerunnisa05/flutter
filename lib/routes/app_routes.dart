@@ -33,7 +33,6 @@ import 'package:flutter_salwa_rpl1/latihanFormulir/input_page.dart';
 import 'package:flutter_salwa_rpl1/latihanAI/halaman1.dart';
 import 'package:flutter_salwa_rpl1/pages/fetch_api_page.dart';
 
-
 class AppRoutes {
   static const home  = '/';
   static const listScreen  = '/list-Screen';
@@ -67,12 +66,6 @@ class AppRoutes {
   static const latihaninputpage = '/latihanforminput';
   static const latihanAI = '/latihanAI';
   static const fetchApiPage = '/fetchApiPage';
-
-
-
-
-  
-  
   
   static Map<String , WidgetBuilder> routes = {
     home: (context) =>  HomePage(),
