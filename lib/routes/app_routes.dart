@@ -28,13 +28,10 @@ import 'package:flutter_salwa_rpl1/sized_expanded_stack/LatihanLima.dart';
 
 //form
 import 'package:flutter_salwa_rpl1/pages/form_page.dart';
-
-
-
-
-
-
-
+import 'package:flutter_salwa_rpl1/pages/input_page.dart';
+import 'package:flutter_salwa_rpl1/latihanFormulir/input_page.dart';
+import 'package:flutter_salwa_rpl1/latihanAI/halaman1.dart';
+import 'package:flutter_salwa_rpl1/pages/fetch_api_page.dart';
 
 class AppRoutes {
   static const home  = '/';
@@ -65,8 +62,10 @@ class AppRoutes {
   static const latihanLima = '/LatihanLima';
   //form
   static const formpage = '/form_page';
-  
-  
+  static const inputpage = '/forminput';
+  static const latihaninputpage = '/latihanforminput';
+  static const latihanAI = '/latihanAI';
+  static const fetchApiPage = '/fetchApiPage';
   
   static Map<String , WidgetBuilder> routes = {
     home: (context) =>  HomePage(),
@@ -98,6 +97,10 @@ class AppRoutes {
 
     //form
     formpage:(context) => FormPage(),
+    inputpage:(context) => BelajarForm(),
+    latihaninputpage:(context) => LatihanBelajarForm(),
+    latihanAI:(context) => YaposKasirApp(),
+    fetchApiPage:(context) => AlbumPage(),
   };
 
 }

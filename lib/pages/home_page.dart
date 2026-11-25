@@ -115,6 +115,34 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Masuk Latihan Lima'),
             ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/forminput');
+              },
+              child: Text('Masuk Form Input'),
+            ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/latihanforminput');
+              },
+              child: Text('Masuk Latihan Form Input'),
+            ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/latihanAI');
+              },
+              child: Text('Masuk Latihan AI'),
+            ),
+            const SizedBox(height: 5,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/fetchApiPage');
+              },
+              child: Text('Masuk Fetch API Page'),
+            ),
           ],
         ),
       ),

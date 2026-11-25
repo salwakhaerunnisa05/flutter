@@ -132,6 +132,9 @@ class _FormPageState extends State<FormPage> {
                   Text('Tanggal Lahir: ${_outputTanggalLahir.isEmpty ? "-" : _outputTanggalLahir}',
                   style: const TextStyle(fontSize: 16),
                   ),
+                  Text('Jenis Kelamin: ${_outputJenisKelamin.isEmpty ? "-" : _outputJenisKelamin}',
+                  style: const TextStyle(fontSize: 16),
+                  ),
               ],
             )
           ),
